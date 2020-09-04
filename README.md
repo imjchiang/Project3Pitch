@@ -24,33 +24,45 @@ Provide information in the following sections:
 ----------------------------------------------------------
 ### Models and Schemas
 
-Post:
-- title: string
-- tags: array
-- format: array
-- descriptions: array
-- codeSnippets: array
-- image (optional): array
-- author: (userId)
-- date(optional): date
-- comments: array(CommentId)
+scope:
+- necessary (1)
+- very useful (2)
+- useful (3)
+- unneccessary (4)
 
-Comment:
-- comment: string
-- format: array
-- descriptions: array
-- codeSnippets: array
-- image (optional): array
-- author: (userId)
-- date(optional): date
+backend: array(tags)
 
-User:
-- username: string
-- email: string
-- password: string
-- posts: array(postId)
-- comments: array(commentId)
-- date(optional): date
+Post:       (1)
+- title: string       (1)
+- tags: array       (3)
+- format: array       (2)
+- descriptions: array(text)       (1)
+- codeSnippets: array(text)       (2)
+- image (optional): array       (4)
+- author: (userId)       (1)
+- date(optional): date       (4)
+- upvote: array(userId)       (2)
+- downvote: array(userId)       (2)
+- comments: array(CommentId)       (1)
+
+Comment:       (1)
+- format: array       (2)
+- descriptions: array       (1)
+- codeSnippets: array       (1)
+- image (optional): array       (4)
+- authorCom: (userId)       (1)
+- date(optional): date       (4)
+- upvoteCom: array(userId)       (2)
+- downvoteCom: array(userId)       (2)
+- starredOnPost: boolean       (2)
+
+User:       (1)
+- username: string       (1)
+- email: string       (1)
+- password: string       (1)
+- posts: array(postId)       (1)
+- comments: array(commentId)       (3)
+- date(optional): date       (4)
 
 ----------------------------------------------------------
 ### User Stories
