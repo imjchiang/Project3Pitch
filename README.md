@@ -22,6 +22,11 @@ Provide information in the following sections:
 - Pitch: Alternative to stack overflow
 
 ----------------------------------------------------------
+### Notes
+- node module involving code snippets (escape characters/md) - Josh
+- if we have time: (I see you have images set up to basically be attachments. Just want to confirm that you will not try to put images directly in the body of a post or comment.) - check with Pete
+
+----------------------------------------------------------
 ### Models and Schemas
 
 scope:
@@ -30,25 +35,20 @@ scope:
 - useful (3)
 - unneccessary (4)
 
-backend: array(tags)
-
 Post:       (1)
 - title: string       (1)
-- tags: array       (3)
-- format: array       (2)
-- descriptions: array(text)       (1)
-- codeSnippets: array(text)       (2)
+- tags: array(tagId)       (3)
+- descriptionsAndCode: array(text)       (1)
 - image (optional): array       (4)
 - author: (userId)       (1)
 - date(optional): date       (4)
 - upvote: array(userId)       (2)
 - downvote: array(userId)       (2)
 - comments: array(CommentId)       (1)
+- solved: boolean       (2)
 
-Comment:       (1)
-- format: array       (2)
-- descriptions: array       (1)
-- codeSnippets: array       (1)
+Comment: Embedded       (1)
+- descriptionsAndCode: array       (1)
 - image (optional): array       (4)
 - authorCom: (userId)       (1)
 - date(optional): date       (4)
@@ -56,7 +56,10 @@ Comment:       (1)
 - downvoteCom: array(userId)       (2)
 - starredOnPost: boolean       (2)
 
-User:       (1)
+Tag: Referenced        (3)
+- name: string        (3)
+
+User: Referenced       (1)
 - username: string       (1)
 - email: string       (1)
 - password: string       (1)
