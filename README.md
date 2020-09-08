@@ -109,34 +109,65 @@ Each individual is in charge of the listed items (all team members will collabor
 ### Daily Sprints
 ##### (or otherwise general plan for accomplishing tasks, preferably broken down by day)
 
-Friday: 
-- Set up master repo
-Saturday: 
-- master repo set
-- models and schemas complete
-- set up basic routes
-- set up basic components
-Sunday:
-- complete "Post" routes
-- complete "Post" and "Comment" components and subcomponents
-- implement more auth stuff for "Post" and "Comment" routes and components
-Monday:
-- complete "CreatePost / EditPost" routes
-- complete "CreatePost / EditPost" component and subcomponents
-- implement more auth stuff for "CreatePost / EditPost" routes and components
+- (COMPLETED) Set up master repo
+- (COMPLETED) master repo set
+- (COMPLETED) complete "Post" routes
+- (COMPLETED) complete "Post" and "Comment" components and subcomponents
+- (COMPLETED) implement more auth stuff for "Comment" routes and components
+- (COMPLETED) complete "CreatePost" routes
+- (COMPLETED) complete "CreatePost" component and subcomponents
+- (COMPLETED) complete "AllPosts" routes
+- (COMPLETED) complete "AllPosts" component and subcomponents
+- (COMPLETED) complete "Profile" routes
+- (COMPLETED) implement more auth stuff for "Profile" routes and components
+- (COMPLETED) complete "Home" route
+
+- (TENTATIVE) models and schemas complete
+
 Tuesday:
-- complete "Feed" routes
-- complete "Feed" component and subcomponents
-- implement more auth stuff for "Feed" routes and components
-Wednesday:
-- complete "Profile" routes
+- (LOW PRIORITY) complete "EditPost" routes - Alice (post put backend), Irene (edit post component frontend, on /post)
+- (LOW PRIORITY) complete "EditComment" routes - Alice (comment put backend), Irene (edit comment component frontend, on /post)
+
+- (Josh) implement redirection for /post/new if not sign in -- import from profile
+- (Josh) implement redirection for commenting if not signed in -- import from profile
+- (Partial) implement more auth stuff for "CreatePost" routes and components
+- implement more auth stuff for "EditPost" routes and components
+
+(whoever is good to go)
 - complete "Profile" component and subcomponents
-- implement more auth stuff for "Profile" routes and components
-Thursday:
-- complete "Home" route
 - complete "Home" component and subcomponents
+- delete comments (IMPORTANT: JUST EDIT, NOT DELETE)
+- delete posts (IMPORTANT: NEED TO BE SURE AUTH IS WORKING)
+
 - MVP reached
-- add styling
+
+Wednesday:
+- Anything not done from Tuesday
+- author choose solution comment
+- toggle for solved for author
+- filters through tags
+- upvote/downvote (for post, if more time for comment also)
+    - implement more auth stuff for "AllPosts" for up/downvote
+- add pictures (indicate pictures for code snippets, for both comment and post)
+
+- styling
+
+
+Thursday:
+- Anything not done from Tuesday or Wednesday
+- README.md
+    - Include a screenshot of the site in repo's README
+    - Explanations of the technologies used
+    - A couple paragraphs about the general approach you took
+    - Installation instructions for any dependencies
+    - Link to your user stories – who are your users, what do they want, and why?
+    - Link to your wireframes – sketches of major views / interfaces in your application
+    - Descriptions of any unsolved problems or major hurdles your team had to overcome
+
+
+Friday:
+- Last minute bug fixes
+- Presentation! (in theory)
 
 ----------------------------------------------------------
 
