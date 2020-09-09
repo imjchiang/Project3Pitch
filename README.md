@@ -121,35 +121,30 @@ Each individual is in charge of the listed items (all team members will collabor
 - (COMPLETED) complete "Profile" routes
 - (COMPLETED) implement more auth stuff for "Profile" routes and components
 - (COMPLETED) complete "Home" route
+- (COMPLETED) complete "EditPost" routes - Alice (post put backend), Irene (edit post component frontend, on /post)
+- (COMPLETED) complete "EditComment" routes - Alice (comment put backend), Irene (edit comment component frontend, on /post)
+- (COMPLETED) implement redirection for /post/new if not sign in -- import from profile
+- (COMPLETED) implement redirection for commenting if not signed in -- import from profile
+- (COMPLETED) implement more auth stuff for "CreatePost" routes and components
+- (COMPLETED) implement more auth stuff for "EditPost" routes and components
+- (COMPLETED) delete comments (IMPORTANT: JUST EDIT, NOT DELETE)
+- (COMPLETED) delete posts (IMPORTANT: NEED TO BE SURE AUTH IS WORKING)
 
 - (TENTATIVE) models and schemas complete
 
-Tuesday:
-- (LOW PRIORITY) complete "EditPost" routes - Alice (post put backend), Irene (edit post component frontend, on /post)
-- (LOW PRIORITY) complete "EditComment" routes - Alice (comment put backend), Irene (edit comment component frontend, on /post)
 
-- (Josh) implement redirection for /post/new if not sign in -- import from profile
-- (Josh) implement redirection for commenting if not signed in -- import from profile
-- (Partial) implement more auth stuff for "CreatePost" routes and components
-- implement more auth stuff for "EditPost" routes and components
-
-(whoever is good to go)
-- complete "Profile" component and subcomponents
-- complete "Home" component and subcomponents
-- delete comments (IMPORTANT: JUST EDIT, NOT DELETE)
-- delete posts (IMPORTANT: NEED TO BE SURE AUTH IS WORKING)
+Wednesday:
+- (Josh) complete "Profile" component and subcomponents
+- (Josh) complete "Home" component and subcomponents
 
 - MVP reached
 
-Wednesday:
-- Anything not done from Tuesday
-- author choose solution comment
 - toggle for solved for author
-- filters through tags
+- author choose solution comment
+- add pictures (indicate pictures for code snippets, for both comment and post)
+- filters through tags (component is present)
 - upvote/downvote (for post, if more time for comment also)
     - implement more auth stuff for "AllPosts" for up/downvote
-- add pictures (indicate pictures for code snippets, for both comment and post)
-
 - styling
 
 
